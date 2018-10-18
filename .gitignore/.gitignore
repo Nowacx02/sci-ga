@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstdlib>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Microsoft Windows [Version 7.0.1]"<<endl;
+    cout<<"(c) 2018 Microsoft Corporation. Wszelkie prawa zastrzezone." << endl;
+    cout<<endl;
+    cout<<"C:/Users/Administrator>";
+    char w;
+    w=getch();
+    if (w!='1'&&w!='2'&&w!='3')
+        while(w!='1'&&w!='2'&&w!='3')
+            w=getch();
+
+    switch (w)
+    {
+    case '1': cout<<endl<<"Odpowiedz 1"<<endl;
+    getch(); system("cls"); main(); break;
+    case '2': cout<<endl<<"Odpowiedz 2"<<endl;
+    getch(); system("cls"); main(); break;
+    case '3': cout<<endl<<"Odpowiedz 3"<<endl;
+    getch(); system("cls"); main(); break;
+    }
+    return 0;
+
+}
